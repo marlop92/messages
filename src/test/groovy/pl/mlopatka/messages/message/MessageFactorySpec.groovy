@@ -8,7 +8,7 @@ import java.time.ZonedDateTime
 
 import static pl.mlopatka.utils.TestUtils.FIXED_INSTANT
 
-class MessageFactoryTest extends Specification {
+class MessageFactorySpec extends Specification {
 
     def clock = new MutableClock(FIXED_INSTANT)
     def factory = new MessageFactory(clock)

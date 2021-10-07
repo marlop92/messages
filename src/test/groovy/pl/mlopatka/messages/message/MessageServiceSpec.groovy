@@ -3,7 +3,7 @@ package pl.mlopatka.messages.message
 import pl.mlopatka.utils.TestUtils
 import spock.lang.Specification
 
-class MessageServiceTest extends Specification {
+class MessageServiceSpec extends Specification {
 
     def messageFactory = Mock(MessageFactory)
     def messageMapper = Mock(MessageMapper)

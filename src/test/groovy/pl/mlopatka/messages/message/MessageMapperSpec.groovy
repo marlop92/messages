@@ -9,7 +9,7 @@ import java.time.ZonedDateTime
 
 import static pl.mlopatka.utils.TestUtils.FIXED_INSTANT
 
-class MessageMapperTest extends Specification {
+class MessageMapperSpec extends Specification {
 
     def mapper = Mappers.getMapper(MessageMapper.class)
 
