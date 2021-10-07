@@ -1,15 +1,13 @@
 package pl.mlopatka.messages.message;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.*;
 
 import java.time.ZonedDateTime;
 
 @Data
 @EqualsAndHashCode
 @NoArgsConstructor
+@AllArgsConstructor
 public class MessageDto {
 
     @NonNull

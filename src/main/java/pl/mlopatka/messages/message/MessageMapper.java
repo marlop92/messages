@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface MessageMapper {
 
-    List<MessageDto> map(List<Message> employees);
+    List<MessageDto> map(List<Message> messages);
 
     @BeanMapping(ignoreByDefault = true)
     @Mapping(source = "message.author", target = "author")

@@ -1,13 +1,15 @@
 package pl.mlopatka.messages.message;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
 
 @Entity
 @Table(name = "messages")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Getter
 @Setter
 public class Message {
@@ -24,4 +26,5 @@ public class Message {
 
     @Column(name = "text", nullable = false)
     private String text;
+
 }

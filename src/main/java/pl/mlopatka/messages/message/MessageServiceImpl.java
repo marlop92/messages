@@ -18,7 +18,7 @@ public class MessageServiceImpl implements MessageService {
     @Override
     public long createMessage(MessageDto messageDto) {
         Message message = messageFactory.createMessage(messageDto.getAuthor(), messageDto.getText());
-        messageRepository.save(message);
+        message = messageRepository.save(message);
         return message.getId();
     }
 
