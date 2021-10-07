@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "author": "anonim",
+    "creationTime": "2020-01-05T10:45:00+02:00",
+    "text": "firstMessage"
+  },
+  {
+    "id": 2,
+    "author": "gal",
+    "creationTime": "2020-01-05T10:45:00+02:00",
+    "text": "secondMessage"
+  }
+]
