@@ -1,16 +1,13 @@
 package pl.mlopatka.messages.message
 
-
+import pl.mlopatka.utils.TestUtils
 import spock.lang.Specification
 import spock.util.time.MutableClock
-
 import java.time.ZonedDateTime
-
-import static pl.mlopatka.utils.TestUtils.FIXED_INSTANT
 
 class MessageFactorySpec extends Specification {
 
-    def clock = new MutableClock(FIXED_INSTANT)
+    def clock = new MutableClock(TestUtils.FIXED_INSTANT)
     def factory = new MessageFactory(clock)
 
     def "should create message"() {

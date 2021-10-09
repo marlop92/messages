@@ -2,14 +2,12 @@ package pl.mlopatka.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
-import org.testcontainers.shaded.com.fasterxml.jackson.core.type.TypeReference;
 import pl.mlopatka.messages.message.Message;
 import pl.mlopatka.messages.message.MessageDto;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.Instant;
-import java.util.Collection;
 import java.util.List;
 
 public class TestUtils {

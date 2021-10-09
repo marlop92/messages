@@ -3,11 +3,6 @@ package pl.mlopatka.messages.message
 import org.mapstruct.factory.Mappers
 import pl.mlopatka.utils.TestUtils
 import spock.lang.Specification
-import spock.util.time.MutableClock
-
-import java.time.ZonedDateTime
-
-import static pl.mlopatka.utils.TestUtils.FIXED_INSTANT
 
 class MessageMapperSpec extends Specification {
 
