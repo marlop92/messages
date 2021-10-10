@@ -12,8 +12,10 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @SpringBootTest
 public class PersistenceItTest {
 
+    private static final String DB_DOCKER_IMG = "postgres:11.1";
+
     @Container
-    private static PostgreSQLContainer postgreSQLContainer = new PostgreSQLContainer("postgres:11.1")
+    private final static PostgreSQLContainer<?> POSTGRESQL_CONTAINER = new PostgreSQLContainer<>(DB_DOCKER_IMG)
             .withDatabaseName("integration-tests-db")
             .withUsername("sa")
             .withPassword("sa");
@@ -23,9 +25,9 @@ public class PersistenceItTest {
 
     protected void dbContainerSetup() {
         TestPropertyValues.of(
-                "spring.datasource.url=" + postgreSQLContainer.getJdbcUrl(),
-                "spring.datasource.username=" + postgreSQLContainer.getUsername(),
-                "spring.datasource.password=" + postgreSQLContainer.getPassword()
+                "spring.datasource.url=" + POSTGRESQL_CONTAINER.getJdbcUrl(),
+                "spring.datasource.username=" + POSTGRESQL_CONTAINER.getUsername(),
+                "spring.datasource.password=" + POSTGRESQL_CONTAINER.getPassword()
         ).applyTo(configurableApplicationContext.getEnvironment());
     }
 }
