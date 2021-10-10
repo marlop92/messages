@@ -6,6 +6,7 @@ import java.time.ZonedDateTime;
 
 @Data
 @EqualsAndHashCode
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class MessageDto {

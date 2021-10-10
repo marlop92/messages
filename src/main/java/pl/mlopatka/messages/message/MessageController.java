@@ -1,6 +1,7 @@
 package pl.mlopatka.messages.message;
 
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,7 @@ public class MessageController {
     private final MessageService messageService;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public long createMessage(@NonNull @RequestBody MessageDto messageDto) {
         return messageService.createMessage(messageDto);
     }

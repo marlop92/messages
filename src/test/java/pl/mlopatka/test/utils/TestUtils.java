@@ -10,14 +10,11 @@ import java.io.InputStream;
 import java.time.Instant;
 import java.util.List;
 
+import static pl.mlopatka.test.config.Config.OBJECT_MAPPER;
+
 public class TestUtils {
 
     public final static Instant FIXED_INSTANT = Instant.parse("2020-01-05T10:45:00+02:00");
-    private final static ObjectMapper OBJECT_MAPPER = new ObjectMapper();
-
-    static {
-        OBJECT_MAPPER.findAndRegisterModules();
-    }
 
     public static MessageDto getMessageDto() throws IOException {
         return readValue("messageDto.json", MessageDto.class);
