@@ -1,7 +1,7 @@
 package pl.mlopatka.messages.message
 
+import pl.mlopatka.test.utils.TestUtils;
 import org.mapstruct.factory.Mappers
-import pl.mlopatka.utils.TestUtils
 import spock.lang.Specification
 
 class MessageMapperSpec extends Specification {

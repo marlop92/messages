@@ -1,6 +1,6 @@
 package pl.mlopatka.messages.message
 
-import pl.mlopatka.utils.TestUtils
+import pl.mlopatka.test.utils.TestUtils;
 import spock.lang.Specification
 import spock.util.time.MutableClock
 import java.time.ZonedDateTime

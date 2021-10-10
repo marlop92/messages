@@ -1,4 +1,4 @@
-package pl.mlopatka.utils;
+package pl.mlopatka.test.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
