@@ -7,35 +7,26 @@
    http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <changeSet id="1" author="marcin">
-        <createTable tableName="messages">
-            <column  name="id"  type="serial"/>
-            <column  name="author"  type="varchar(255)"/>
-            <column  name="creation_time"  type="timestamp with time zone"/>
-            <column  name="text"  type="varchar(255)"/>
-        </createTable>
-    </changeSet>
-
-    <changeSet id="2" author="edyta">
+    <changeSet id="dev_1" author="edyta">
         <insert tableName="messages">
-            <column  name="author"  value="MarcinPe"/>
+            <column  name="author"  value="marcin"/>
             <column  name="creation_time"  value="2011-01-01 00:00:00"/>
-            <column  name="text"  value="Hello world"/>
+            <column  name="text"  value="Hello world!"/>
         </insert>
         <insert tableName="messages">
-            <column  name="author"  value="MarcinPe"/>
+            <column  name="author"  value="marcin"/>
             <column  name="creation_time"  value="2011-07-07 00:00:00"/>
-            <column  name="text"  value="I'm dead"/>
+            <column  name="text"  value="Lorem ipsum"/>
         </insert>
         <insert tableName="messages">
-            <column  name="author"  value="MarcinPe"/>
+            <column  name="author"  value="marcin"/>
             <column  name="creation_time"  value="2011-09-01 00:00:00"/>
-            <column  name="text"  value="No, I'm not"/>
+            <column  name="text"  value="Abcdefghi!"/>
         </insert>
         <insert tableName="messages">
-            <column  name="author"  value="Edyta"/>
+            <column  name="author"  value="edyta"/>
             <column  name="creation_time"  value="2017-01-01 00:00:00"/>
-            <column  name="text"  value="Fuck you Pe!"/>
+            <column  name="text"  value="my very first message"/>
         </insert>
     </changeSet>
 

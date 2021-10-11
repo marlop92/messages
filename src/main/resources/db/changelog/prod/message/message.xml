@@ -7,6 +7,13 @@
    http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <include file="message/message.xml" relativeToChangelogFile="true"/>
+    <changeSet id="prod_1" author="marcin">
+        <createTable tableName="messages">
+            <column  name="id"  type="serial"/>
+            <column  name="author"  type="varchar(255)"/>
+            <column  name="creation_time"  type="timestamp with time zone"/>
+            <column  name="text"  type="varchar(255)"/>
+        </createTable>
+    </changeSet>
 
 </databaseChangeLog>

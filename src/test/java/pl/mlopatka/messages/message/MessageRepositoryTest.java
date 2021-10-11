@@ -24,13 +24,13 @@ class MessageRepositoryTest extends PersistenceItTest {
     @Transactional
     void shouldFindByAuthor() {
         // given
-        String author = "MarcinPe";
+        String author = "author";
 
         // when
         List<Message> messages = messageRepository.findByAuthor(author);
 
         // then
-        assertEquals(3, messages.size());
+        assertEquals(1, messages.size());
     }
 
 }
