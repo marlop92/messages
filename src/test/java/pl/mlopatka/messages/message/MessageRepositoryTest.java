@@ -1,6 +1,5 @@
 package pl.mlopatka.messages.message;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,10 +14,10 @@ class MessageRepositoryTest extends PersistenceItTest {
     @Autowired
     private MessageRepository messageRepository;
 
-    @BeforeEach
-    void setup() {
-        super.dbContainerSetup();
-    }
+//    @BeforeEach
+//    void setup() {
+//        super.dbContainerSetup();
+//    }
 
     @Test
     @Transactional
