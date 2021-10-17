@@ -1,11 +1,12 @@
 package pl.mlopatka.messages.message;
 
+
 import lombok.*;
+import org.springframework.lang.NonNull;
 
 import java.time.ZonedDateTime;
 
 @Data
-@EqualsAndHashCode
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
